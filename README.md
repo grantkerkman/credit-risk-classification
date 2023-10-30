@@ -56,11 +56,3 @@ The key libraries used in this analysis include:
 ## Conclusion
 
 Both models showed strong performance in predicting loan statuses. The resampled model demonstrated slightly better performance in identifying high-risk loans. Choosing a model may depend on the emphasis of correctly predicting high-risk loans. If a balanced prediction of both healthy and high-risk loans is essential, the model trained with resampled data is recommended.
-
-Feel free to explore the code, analysis, and outputs within this repository.
-
-For more details, you can refer to the [Jupyter Notebook](link-to-your-notebook.ipynb) in this repository.
-
-For inquiries or collaborations, please contact [Your Name](link-to-your-profile).
-
-Happy exploring and analyzing!
