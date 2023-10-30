@@ -6,7 +6,7 @@ The purpose of this analysis was to predict loan statuses based on financial dat
 
 ### Labels Data Overview
 
-The labels ('loan_status') were binary: 0 represented 'healthy loan', and 1 represented 'high-risk loan'. The `value_counts` function revealed an imbalanced dataset, with a majority of healthy loans (0) compared to high-risk loans (1).
+The labels 'loan_status' were binary: 0 represented 'healthy loan', and 1 represented 'high-risk loan'. The `value_counts` function revealed an imbalanced dataset, with a majority of healthy loans (0) compared to high-risk loans (1).
 
 The analysis proceeded through various stages: 
 1. Data loading and exploration.
@@ -20,22 +20,38 @@ The analysis proceeded through various stages:
 ## Results
 
 ### Machine Learning Model 1: Logistic Regression with Original Data
-- **Accuracy:** 99.18%
-- **Confusion Matrix:** [18663, 102, 56, 563]
-- **Classification Report:** 
-    precision    recall  f1-score   support
-    healthy_loan       1.00      0.99      1.00     18765
-    high_risk_loan     0.85      0.91      0.88       619
-    accuracy                           0.99     19384
+**Accuracy:** 99.18%
+
+**Confusion Matrix:**
+|            | Predicted 0 | Predicted 1 |
+|------------|-------------|-------------|
+| Actual 0   | 18663       | 102         |
+| Actual 1   | 56          | 563         |
+
+**Classification Report:** 
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| healthy_loan| 1.00      | 0.99   | 1.00     | 18765   |
+| high_risk_loan| 0.85     | 0.91   | 0.88     | 619     |
+| Accuracy    |           |        |          | 0.99    |
+
 
 ### Machine Learning Model 2: Logistic Regression with Resampled Data
-- **Accuracy:** 99.38%
-- **Confusion Matrix:** [18649, 116, 4, 615]
-- **Classification Report:** 
-    precision    recall  f1-score   support
-    healthy_loan       1.00      0.99      1.00     18765
-    high_risk_loan     0.84      0.99      0.91       619
-    accuracy                           0.99     19384
+**Accuracy:** 99.38%
+
+**Confusion Matrix:**
+|             | Predicted 0 | Predicted 1 |
+|-------------|-------------|-------------|
+| Actual 0    | 18649       | 116         |
+| Actual 1    | 4           | 615         |
+
+**Classification Report:** 
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| healthy_loan| 1.00      | 0.99   | 1.00     | 18765   |
+| high_risk_loan| 0.84     | 0.99   | 0.91     | 619     |
+| Accuracy    |           |        |          | 0.99    |
+
 
 ## Summary
 
