@@ -22,32 +22,36 @@ The key libraries used in this analysis include:
 ## Results
 
 ### Model 1: Logistic Regression with Original Data
-- **Accuracy**: 99.18%
-- **Confusion Matrix:**
+**Accuracy**: 99.18%
+
+**Confusion Matrix:**
 |             | Predicted 0 | Predicted 1 |
 |-------------|-------------|-------------|
 | Actual 0    | 18663       | 102         |
 | Actual 1    | 56          | 563         |
-- **Classification Report:** 
-    |             | Precision | Recall | F1-Score | Support |
-    |-------------|-----------|--------|----------|---------|
-    | healthy_loan| 1.00      | 0.99   | 1.00     | 18765   |
-    | high_risk_loan| 0.85     | 0.91   | 0.88     | 619     |
-    | Accuracy    |           |        |          | 0.99    |
+
+**Classification Report:** 
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| healthy_loan| 1.00      | 0.99   | 1.00     | 18765   |
+| high_risk_loan| 0.85     | 0.91   | 0.88     | 619     |
+| Accuracy    |           |        |          | 0.99    |
 
 ### Model 2: Logistic Regression with Resampled Data
-- **Accuracy**: 99.38%
-- **Confusion Matrix:**
+**Accuracy**: 99.38%
+
+**Confusion Matrix:**
 |             | Predicted 0 | Predicted 1 |
 |-------------|-------------|-------------|
 | Actual 0    | 18649       | 116         |
 | Actual 1    | 4           | 615         |
-- **Classification Report:** 
-    |             | Precision | Recall | F1-Score | Support |
-    |-------------|-----------|--------|----------|---------|
-    | healthy_loan| 1.00      | 0.99   | 1.00     | 18765   |
-    | high_risk_loan| 0.84     | 0.99   | 0.91     | 619     |
-    | Accuracy    |           |        |          | 0.99    |
+
+**Classification Report:** 
+|             | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| healthy_loan| 1.00      | 0.99   | 1.00     | 18765   |
+| high_risk_loan| 0.84     | 0.99   | 0.91     | 619     |
+| Accuracy    |           |        |          | 0.99    |
 
 ## Conclusion
 
